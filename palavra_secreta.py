@@ -25,6 +25,11 @@ while True:
 
     print('Palavra formada:', palavra_formada)
 
+    if numero_tentativas > 5:
+        os.system('clear')
+        print('QUE PENA, VOCÊ PERDEU!')
+        break
+
     if palavra_formada == palavra_secreta:
         os.system('clear')
         print('VOCÊ GANHOU! PARABÉNS!!!')
